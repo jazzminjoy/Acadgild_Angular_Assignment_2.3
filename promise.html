@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Acadgild Angular Assignment 2.3</title>
+        <style>
+            p { width: 500px;}
+            h1 {color: green}
+            h2 {color: purple}
+            h2.emphasis { color: red; border: 5px solid red;}
+            .button {
+                border: 3px solid forestgreen;
+                color: forestgreen;
+                padding: 10px;
+                text-align: center;
+                border-radius: 8px;
+                display: inline-block;
+                font-size: 16px;
+                background-color: lavender;
+                }
+       </style>
+        <!-- Student: Michele Cannito -->
+    </head>
+    <body>
+    <!-- 
+    Make a Promise, using One button in promise.html 
+    then log status there in another element.
+    You need to show all states of promise, for example on 
+    first time click on that button:
+    1) Started (Sync code started)
+    1) Promise started (Async code started)
+    1) Promise made (Sync code terminated)
+    1) Promise fulfilled (Async code terminated) and so on
+    So create one js file write your promise code into promise.js 
+    and show output in html
+    -->
+         <!-- Explain assignment works in browsers which support ES6 -->
+        <h1>Acadgild Angular Assignment 2.3, "ECMAScript 6, part 1", Promise</h1>
+            <h2 class="emphasis">
+                This code WORKS in Chrome and browsers which support the ES6 Promise feature. </h2>
+            
+            <!-- List assingment components -->
+            <h2>Assignment Components:</h2>  
+                <p>This assignment has the following two components:
+                     <ul>
+                        <li>promise.html</li> 
+                        <li>promise.js.</li>
+                    </ul>
+                </p>
+            <!-- Create button -->
+            <h2>Below is the button which logs the Promise status. Happy clicking! 
+                <br/><br/>
+                <button onclick = "makePromise()" id="btn" class="button">
+                    Make a promise!
+                </button>
+            </h2>
+            <!-- Output to id="log" -->
+            <h2>Here is the click count followed by the Promise status output:</h2> 
+                <p id="log"></p>  
+
+        <!-- JavaScript Files -->
+        <script src="promise.js"></script>
+    </body>
+</html>
